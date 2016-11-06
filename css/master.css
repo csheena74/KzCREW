@@ -106,6 +106,21 @@ main {
     border-bottom: 1px solid #ccc;
 }
 
+/* biography main */
+h2{
+  margin: 30px 50px auto;
+}
+
+.tabbox{
+  margin: 30px 50px auto;
+}
+
+.underline{
+  width: 800px;
+  border-bottom: dotted 4px #ccc;
+  padding: 10px;
+}
+
 /* footer */
 footer {
     display: -webkit-box;
