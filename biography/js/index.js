@@ -10,4 +10,4 @@ function ChangeTab(tabname) {
 			}
 }
 // デフォルトのタブを選択
-  ChangeTab('tab1');
+  //ChangeTab('tab1');
