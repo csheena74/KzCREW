@@ -111,8 +111,44 @@ h2{
   margin: 30px 50px auto;
 }
 
-.tabbox{
+.tab-menu{
+  list-style:none;
   margin: 30px 50px auto;
+}
+
+.tab-menu li{
+  display:inline-block;
+  padding:5px 20px;
+}
+
+.tab-menu li a{
+  color:#666;
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.tab-menu li.active a{
+  color:#444;
+}
+
+.tab-content{
+  margin: 30px 70px auto;
+}
+
+#tab-date{
+  border-bottom: dotted 2px #000000;
+  line-height: 60px;
+  padding-bottom: 5px;
+  padding-right : 10px;
+  padding-left : 10px;
+}
+
+#tab-text{
+  border-bottom: dotted 2px #000000;
+  line-height: 60px;
+  padding-bottom: 5px;
+  padding-right : 700px;
+  padding-left : 10px;
 }
 
 .underline{

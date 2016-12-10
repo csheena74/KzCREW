@@ -12,7 +12,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="196x196" href="">
     <link rel="apple-touch-icon" sizes="152x152" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -31,47 +33,58 @@
       </header>
       <!-- main (main-visual, box) -->
       <main>
-        <div>
-        <h2>Biography</h2>
-        <div class="tabbox">
-          <p class="tabs">
-            <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">[2000-2004]</a>
-            <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">[2005-2009]</a>
-            <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">[2010-2014]</a>
-            <a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">[2015-2016]</a>
-          </p>
-          <div id="tab1" class="tab">
-            <h3>[2000-2004]の内容</h3>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-          </div>
-          <div id="tab2" class="tab">
-            <h3>[2005-2009]の内容</h3>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-          </div>
-          <div id="tab3" class="tab">
-            <h3>[2010-2014]の内容</h3>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-          </div>
-          <div id="tab4" class="tab">
-            <h3>[2015-2016]の内容</h3>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-            <p class="underline">あああああああああああああああああああああああ</p>
-          </div>
-        </div>
-        <script type="text/javascript">
-        ChangeTab('tab1');
-        </script>
+        <h2>biography</h2>
+        <!--<div class='tabbox'>-->
+          <ul class="tab-menu">
+              <li><a href="#tab1">[2000-2004]</a></li>
+              <li><a href="#tab2">[2005-2009]</a></li>
+              <li><a href="#tab3">[2010-2014]</a></li>
+              <li><a href="#tab4">[2015-2016]</a></li>
+          </ul>
+
+          <ul class="tab-content">
+              <li id="tab1">
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab1のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab1のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab1のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab1のコンテンツ</span><br>
+              </li>
+              <li id="tab2">
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab2のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab2のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab2のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab2のコンテンツ</span><br>
+              </li>
+              <li id="tab3">
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab3のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab3のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab3のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab3のコンテンツ</span><br>
+              </li>
+              <li id="tab4">
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab4のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab4のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab4のコンテンツ</span><br>
+                <span id="tab-date">20XX/XX/XX</span>
+                <span id="tab-text">tab4のコンテンツ</span><br>
+              </li>
+          </ul>
+        <!--</div>-->
       </main>
       <!-- footer (bannaer) -->
       <footer role="contentinfo">

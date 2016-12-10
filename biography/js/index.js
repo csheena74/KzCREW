@@ -1,13 +1,21 @@
-function ChangeTab(tabname) {
-   // 全部消す
-   document.getElementById('tab1').style.display = 'none';
-   document.getElementById('tab2').style.display = 'none';
-   document.getElementById('tab3').style.display = 'none';
-   document.getElementById('tab4').style.display = 'none';
-   // 指定箇所のみ表示
-   if(tabname) {
-				document.getElementById(tabname).style.display = 'block';
-			}
-}
-// デフォルトのタブを選択
-  //ChangeTab('tab1');
+$(document).ready(function() {
+$('.tab-content li[id != "tab1"]').hide();
+
+
+//$('.tab-content first').show();
+//$('.tab-menu li:first').addClass('active');
+
+$('.tab-menu li').click(function() {
+$('.tab-content li').hide();
+$($(this).find('a').attr('href')).fadeIn();
+$(this).addClass('active');
+//$($(this).attr("href")).show();
+
+
+//$('.tab-menu li').removeClass('active');
+
+//$('.tab-content').hide();
+
+return false;
+});
+});
